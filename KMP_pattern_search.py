@@ -50,3 +50,6 @@ def long_Prefix_Suffix_Array(pattern, P, long_prefix_suffix):
             else:
                 long_prefix_suffix[i] = 0
                 i += 1
+
+text = "ABABDABACDABABCABAB"
+pattern = "ABABCABAB"
