@@ -38,4 +38,15 @@ def long_Prefix_Suffix_Array(pattern, P, long_prefix_suffix):
     long_prefix_suffix[0]=0
     i=1
 
-    
+    # the loop calculates long_prefix_suffix[i] for i = 1 to P-1
+    while i < P:
+        if pattern[i] == pattern[l]:
+            l += 1
+            long_prefix_suffix[i] = l
+            i += 1
+        else:
+            if l != 0:
+                l=long_prefix_suffix[l-1]
+            else:
+                long_prefix_suffix[i] = 0
+                i += 1
