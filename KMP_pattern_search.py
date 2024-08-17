@@ -31,3 +31,11 @@ def KMP_pattern_search(pattern, text):
                 j=long_prefix_suffix[j-1]
             else:
                 i += 1
+
+def long_Prefix_Suffix_Array(pattern, P, long_prefix_suffix):
+    # length of the previous longest prefix suffix
+    l=0
+    long_prefix_suffix[0]=0
+    i=1
+
+    
