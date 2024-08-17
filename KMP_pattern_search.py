@@ -53,3 +53,4 @@ def long_Prefix_Suffix_Array(pattern, P, long_prefix_suffix):
 
 text = "ABABDABACDABABCABAB"
 pattern = "ABABCABAB"
+KMP_pattern_search(pattern, text)
