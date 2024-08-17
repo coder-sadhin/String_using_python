@@ -27,3 +27,8 @@ def adjacent_pairs(string):
         if ((is_vowel(string[i]) and is_vowel(string[i + 1]))): 
             count += 1
     return count
+
+#driver code
+string=input("enter string")
+
+  
