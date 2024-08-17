@@ -17,3 +17,13 @@ def is_vowel(character):
     else:  
         return False
   
+
+#function to find the number of adjacent vowel pairs.
+def adjacent_pairs(string):
+    string=string.lower()
+    n=len(string)
+    count = 0
+    for i in range(0,n):
+        if ((is_vowel(string[i]) and is_vowel(string[i + 1]))): 
+            count += 1
+    return count
