@@ -30,5 +30,5 @@ def adjacent_pairs(string):
 
 #driver code
 string=input("enter string")
-
+print (adjacent_pairs(string),"is the number of adjacent pairs of vowels")
   
