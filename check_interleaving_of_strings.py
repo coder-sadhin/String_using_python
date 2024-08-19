@@ -43,3 +43,8 @@ def isInterleaving(string_A, string_B, string_C):
 	
     	
     return dp[len(string_B)]
+
+#Driver Code
+string_A = input("Enter string A")
+string_B = input("Enter string B")
+string_C = input("Enter string C")
