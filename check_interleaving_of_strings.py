@@ -26,3 +26,18 @@ def isInterleaving(string_A, string_B, string_C):
     #In other words, check if String C contains all characters of String A and B
     if(len(string_C) != len(string_A) + len(string_B)): return False
     
+    #Create an empty array of length of String B
+    dp = [None] * (len(string_B) + 1)
+    
+    for i in range(len(string_A) + 1):
+        for j in range(len(string_B) + 1):
+            if(i == 0 and j == 0):
+                #The first value of array dp always holds True
+                dp[j] = True
+            elif(i == 0):
+                dp[j] = dp[j - 1] and string_B[j - 1] == string_C[j - 1]
+            elif(j == 0):
+                dp[j] = dp[j] and string_A[i - 1] == string_C[i - 1]
+            else:
+                dp[j] = ((dp[j] and string_A[i - 1] == string_C[i + j - 1]) or (dp[j - 1] and string_B[j - 1] == string_C[i + j - 1]))
+	
