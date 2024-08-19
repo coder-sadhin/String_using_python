@@ -15,4 +15,10 @@ The space complexity of this approach is O(1).
 def are_anagrams(string1, string2): 
       
     # If two strings have different size we return False as they cannot be anagrams of each other
-    
+    if (len(string1) != len(string2)): 
+        return False
+    # Variable to store the Xor Value 
+    xor_value = 0
+    for i in range(len(string1)):
+        xor_value = xor_value ^ ord(string1[i]) 
+        xor_value = xor_value ^ ord(string2[i])
