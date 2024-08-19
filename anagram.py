@@ -22,3 +22,8 @@ def are_anagrams(string1, string2):
     for i in range(len(string1)):
         xor_value = xor_value ^ ord(string1[i]) 
         xor_value = xor_value ^ ord(string2[i])
+
+    if(xor_value==0):
+    	return True
+    else:
+    	return False
