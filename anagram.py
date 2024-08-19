@@ -27,3 +27,7 @@ def are_anagrams(string1, string2):
     	return True
     else:
     	return False
+
+# Code To test The Function
+string1 = "thestringsareanagrams"
+string2 = "arethestringsanagrams"
