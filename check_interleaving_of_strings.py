@@ -21,3 +21,8 @@ Space complexity : O(n)
 
 #Function to check if String C is formed by interleaving of String A and B
 #Returns a boolean value
+def isInterleaving(string_A, string_B, string_C):
+    #Check if the length of String C is equal to sum of lengths of String A and B
+    #In other words, check if String C contains all characters of String A and B
+    if(len(string_C) != len(string_A) + len(string_B)): return False
+    
