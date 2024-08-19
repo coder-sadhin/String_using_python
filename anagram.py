@@ -11,3 +11,8 @@ This solution is optimized by using bit manipulation. If we start at a value of 
 Space Complexity:
 The space complexity of this approach is O(1).
 """
+# Function to check whether two strings are anagrams of each other  
+def are_anagrams(string1, string2): 
+      
+    # If two strings have different size we return False as they cannot be anagrams of each other
+    
