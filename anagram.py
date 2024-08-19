@@ -31,3 +31,8 @@ def are_anagrams(string1, string2):
 # Code To test The Function
 string1 = "thestringsareanagrams"
 string2 = "arethestringsanagrams"
+if(are_anagrams(string1, string2)): 
+    print("The two strings are anagram of each other")
+else: 
+    print("The two strings are not anagram of each other")
+
