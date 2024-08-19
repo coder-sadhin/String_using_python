@@ -41,3 +41,5 @@ def isInterleaving(string_A, string_B, string_C):
             else:
                 dp[j] = ((dp[j] and string_A[i - 1] == string_C[i + j - 1]) or (dp[j - 1] and string_B[j - 1] == string_C[i + j - 1]))
 	
+    	
+    return dp[len(string_B)]
