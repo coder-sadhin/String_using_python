@@ -39,3 +39,13 @@ def check_permutations(word1, word2):
                 return False
         return True
 
+
+def populate_letter_count(word1):
+    # Loop through each letter (looping is an O(n) operation)
+    for letter in word1:
+        # Check if it the letter is in the dictionary (checking is O(n) operation)
+        if letter_counts.get(letter) is None:
+            letter_counts[letter] = 1
+        else:
+            curr_count = letter_counts.get(letter) + 1
+            letter_counts[letter] = curr_count
