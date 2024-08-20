@@ -9,3 +9,5 @@ Every letter must be looped which means O(n) time complexity. Then,
 we must check if each letter is in the dictionary which is another
 O(n) time complexity. Overall, the total time complexity is O(n^2).
 """
+
+letter_counts = {}
