@@ -19,3 +19,7 @@ def finding_substrings(string):
     # printing result  
     print(list)
     print(count)
+
+#driver code
+string = input("enter string: ")
+finding_substrings(string)
