@@ -16,3 +16,6 @@ def finding_substrings(string):
 
             count=count+1
         
+    # printing result  
+    print(list)
+    print(count)
