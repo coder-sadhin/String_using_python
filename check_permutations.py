@@ -21,4 +21,7 @@ def check_permutations(word1, word2):
     if len(word1) == 0 and len(word2) == 0:
         return True
     # Case 3: One Letter Strings
+    if len(word1) == 1 and len(word2) == 1:
+        return word1[0] == word2[0]
+    # Case 4: Length greater than 1 for both strings and lengths are equal
     
