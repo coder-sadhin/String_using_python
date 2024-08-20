@@ -11,3 +11,10 @@ O(n) time complexity. Overall, the total time complexity is O(n^2).
 """
 
 letter_counts = {}
+
+
+def check_permutations(word1, word2):
+    # Case 1: Not matching length
+    if len(word1) != len(word2):
+        return False
+    
