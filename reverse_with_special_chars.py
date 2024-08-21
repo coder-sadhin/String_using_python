@@ -18,3 +18,6 @@ def reverse(s):
         if not s[j].isalnum():
             j -= 1
     return ''.join(s)
+
+
+s = 'a#bcd#efg'
