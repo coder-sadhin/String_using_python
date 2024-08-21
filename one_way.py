@@ -55,3 +55,8 @@ def is_one_away(str1, str2):
         return False
 
     return True
+
+# Driver code
+str1 = input("Enter first string: ")
+str2 = input("Enter second string: ")
+print(is_one_away(str1, str2))
