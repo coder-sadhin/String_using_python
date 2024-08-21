@@ -18,3 +18,8 @@ We are going through both strings at the same time and stopping when
 more than one letter is different, which means O(n) time complexity
 on the while loop. No extra space is required.
 """
+
+def is_one_away(str1, str2):
+    edit_counter = 0
+    i = 0 # str1 index
+    j = 0 # str2 index
