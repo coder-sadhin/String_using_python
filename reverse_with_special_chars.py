@@ -3,3 +3,8 @@
 
 # a#bcd#efg -> g#fed#cba
 
+
+def reverse(s):
+    i = 0
+    j = len(s) - 1
+    
