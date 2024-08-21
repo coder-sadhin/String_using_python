@@ -47,3 +47,11 @@ def is_one_away(str1, str2):
                 continue
         i += 1
         j += 1
+
+    # If one string finished before the other, we will certainly
+    # have one more edit to consider (adding the last letter), so 
+    # we must check if the edit counter is still empty
+    if (i < len(str1) or j < len(str2)) and edit_counter > 0:
+        return False
+
+    return True
