@@ -21,3 +21,5 @@ def reverse(s):
 
 
 s = 'a#bcd#efg'
+print(s)
+print(reverse(list(s)))
