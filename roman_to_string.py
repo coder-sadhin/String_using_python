@@ -7,3 +7,5 @@ A shift on A consists of taking string A and moving the leftmost character to th
 :type B: str
 :rtype: bool
 """
+def is_rotate_string(A, B):
+    
