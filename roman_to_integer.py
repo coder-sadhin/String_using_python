@@ -21,4 +21,12 @@ Space Complexity : O(1)
 def roman_to_integer(input):
     romans={'I':1,'V':5,'X':10,'L':50,'C':100,'D':500,'M':1000}
     sum=0
-    
+    for i in range(input):
+        # Getting the value of the symbol
+        value=romans[input[i]]
+        # Comparing if the next value is bigger or smaller than the current value
+        if i+1<len(input):
+            if romans[input[i+1]]>value:
+                # If it is big, the value is subtracted from the sum
+                sum-=value
+      
