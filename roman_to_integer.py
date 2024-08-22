@@ -29,4 +29,7 @@ def roman_to_integer(input):
             if romans[input[i+1]]>value:
                 # If it is big, the value is subtracted from the sum
                 sum-=value
-      
+        else:
+            sum+=value
+    return sum
+
