@@ -33,3 +33,7 @@ def roman_to_integer(input):
             sum+=value
     return sum
 
+# Main code
+print("Roman to integer conversion of")
+input=input.upper()
+roman_to_integer(input)
