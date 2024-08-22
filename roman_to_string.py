@@ -8,4 +8,10 @@ A shift on A consists of taking string A and moving the leftmost character to th
 :rtype: bool
 """
 def is_rotate_string(A, B):
+    len_a = len(A)
+    len_b = len(B)
+    if len_a != len_b:
+        return False
+    if len_a == 0:
+        return True
     
