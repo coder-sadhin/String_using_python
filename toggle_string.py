@@ -13,3 +13,10 @@ ABCDe
 
 def toggle_string_1(string):
     return string.swapcase()
+
+def toggle_string_2(string):
+    toggle_string=''
+    for s in string:
+        if s.isupper():
+            toggle_string+=s.lower()
+       
