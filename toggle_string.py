@@ -24,3 +24,10 @@ def toggle_string_2(string):
         else:
             toggle_string+=s
     return toggle_string
+
+string=input()
+
+# method 1
+print(toggle_string_1(string)) 
+# method 2
+print(toggle_string_2(string))
