@@ -6,3 +6,9 @@ SAMPLE INPUT 1
 abcd
 SAMPLE OUTPUT 1
 True
+
+SAMPLE INPUT 2
+aabc
+SAMPLE OUTPUT 2
+False
+"""
