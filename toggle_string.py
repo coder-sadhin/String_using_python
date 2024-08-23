@@ -19,4 +19,8 @@ def toggle_string_2(string):
     for s in string:
         if s.isupper():
             toggle_string+=s.lower()
-       
+        elif s.islower():
+            toggle_string+=s.upper()
+        else:
+            toggle_string+=s
+    return toggle_string
