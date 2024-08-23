@@ -10,3 +10,6 @@ abcdE
 SAMPLE OUTPUT 
 ABCDe
 """
+
+def toggle_string_1(string):
+    return string.swapcase()
