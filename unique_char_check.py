@@ -19,3 +19,6 @@ def unique_char_check(S):
     if len(character_count) == len(S):
         return True
     return False
+
+S = input()
+print(unique_char_check(S))
