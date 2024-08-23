@@ -12,3 +12,4 @@ aabc
 SAMPLE OUTPUT 2
 False
 """
+from collections import Counter
